@@ -144,6 +144,7 @@ var (
 	LayerTypeTLS                          = gopacket.RegisterLayerType(140, gopacket.LayerTypeMetadata{Name: "TLS", Decoder: gopacket.DecodeFunc(decodeTLS)})
 	LayerTypeModbusTCP                    = gopacket.RegisterLayerType(141, gopacket.LayerTypeMetadata{Name: "ModbusTCP", Decoder: gopacket.DecodeFunc(decodeModbusTCP)})
 	LayerTypeRMCP                         = gopacket.RegisterLayerType(142, gopacket.LayerTypeMetadata{Name: "RMCP", Decoder: gopacket.DecodeFunc(decodeRMCP)})
+	LayerTypeBNCS                         = gopacket.RegisterLayerType(143, gopacket.LayerTypeMetadata{Name: "BNCS", Decoder: gopacket.DecodeFunc(decodeBNCS)})
 )
 
 var (
